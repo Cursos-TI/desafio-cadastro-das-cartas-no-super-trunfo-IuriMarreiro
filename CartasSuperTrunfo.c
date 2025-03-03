@@ -86,17 +86,64 @@ int main(){
 
 // Comparação de Cartas
 
-    printf("Comparação de Cartas:\n");
-    printf("População: %d\n",populacao1 > populacao2);
-    printf("Área: %d\n",area_km1 > area_km2);
-    printf("PIB: %d\n",pib1 > pib2);
-    printf("Pontos Turísticos: %d\n",pontos_turisticos1 > pontos_turisticos2);
-    printf("Densidade Populacional: %d\n",dp1 < dp2);
-    printf("PIB per Capita: %d\n",ppc1 > ppc2);
-    printf("Super Poder: %d\n",superPoder1 > superPoder2);
-
-
-
+    if (populacao1 > populacao2)
+    {
+        printf("A cidade %s venceu, por possuir uma população de %lu de habitantes\n", cidade1, populacao1);
+    }
+    else
+    {
+        printf("A cidade %s venceu, por possuir uma população de %lu de habitantes\n", cidade2, populacao2);
+    }
+    if (area_km1 > area_km2)
+    {
+        printf("A cidade %s venceu, por possuir uma área de %f km²\n", cidade1, area_km1);
+    }
+    else 
+    {
+        printf("A cidade %s venceu, por possuir uma área de %f km²\n", cidade2, area_km2);
+    }
+    if (pib1 > pib2)
+    {
+        printf("A cidade %s venceu, por possuir um PIB de %f bilhões de reias\n", cidade1, pib1);
+    }
+    else
+    {
+        printf("A cidade %s venceu, por possuir um PIB de %f bilhões de reias\n", cidade2, pib2);
+    }
+    if (pontos_turisticos1 > pontos_turisticos2)
+    {
+        printf("A cidade %s venceu, por possuir %d de pontos turisticos\n", cidade1, pontos_turisticos1);
+    }
+    else
+    {
+        printf("A cidade %s venceu, por possuir %d de pontos turisticos\n", cidade2, pontos_turisticos2);
+    }
+    if (dp1 < dp2)
+    {
+        printf("A cidade %s venceu, por possuir %f de dencidade populacional\n", cidade1, dp1);
+    }
+    else
+    {
+        printf("A cidade %s venceu, por possuir %f de dencidade populacional\n", cidade2, dp2);
+    }
+    if (ppc1 > ppc2)
+    {
+        printf("A cidade %s venceu, por possuir %f de PIB per Capita\n", cidade1, ppc1);
+    }
+    else
+    {
+        printf("A cidade %s venceu, por possuir %f de PIB per Capita\n", cidade2, ppc2);
+    }
+    if (superPoder1 > superPoder2)
+    {
+        printf("A cidade %s venceu, por possuir %f de SUPER PODER\n", cidade1, superPoder1);
+    }
+    else
+    {
+        printf("A cidade %s venceu, por possuir %f de SUPER PODER\n", cidade2, superPoder2);
+    }
+        
+    
     return 0;
 
 }
